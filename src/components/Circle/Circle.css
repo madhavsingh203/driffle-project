@@ -1,0 +1,153 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer circle */
+.fifa-container {
+  position: relative;
+  height: 59rem;
+  width: 59rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.fifa-container img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.fifa-img {
+  animation: fifa-rotation 90s linear infinite;
+}
+.minecraft-img {
+  animation: minecraft-rotation 90s linear infinite;
+  /* transform: rotate(180deg) ; */
+}
+.mk11-img {
+  animation: mk11-rotation 90s linear infinite;
+}
+
+/* Middle circle */
+.middle-circle {
+  position: absolute;
+  height: 42rem;
+  width: 42rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.batman {
+  background: #fbff35;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: batman-rotation 90s linear infinite;
+  position: absolute;
+}
+
+.xbox-img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  animation: xbox-rotation 90s linear infinite;
+}
+
+/* Inner cicle */
+.inner-circle {
+  position: absolute;
+  height: 29rem;
+  width: 29rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+.gta {
+  border-radius: 8px;
+  border: 1px solid #404040;
+  background: #2f2f2f;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: gta-rotation 90s linear infinite;
+}
+
+/* Outer circle Animation */
+
+@keyframes fifa-rotation {
+  0% {
+    transform: rotate(0deg) translate(415px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(415px) rotate(360deg);
+  }
+}
+
+@keyframes minecraft-rotation {
+  0% {
+    transform: rotate(180deg) translate(420px) rotate(180deg);
+  }
+  100% {
+    transform: rotate(-180deg) translate(420px) rotate(540deg);
+  }
+}
+
+@keyframes mk11-rotation {
+  0% {
+    transform: rotate(90deg) translate(420px) rotate(270deg);
+  }
+  100% {
+    transform: rotate(-270deg) translate(420px) rotate(630deg);
+  }
+}
+
+/* Middle circle Animation */
+
+@keyframes batman-rotation {
+  0% {
+    transform: rotate(120deg) translate(21rem) rotate(240deg);
+  }
+  100% {
+    transform: rotate(-240deg) translate(21rem) rotate(600deg);
+  }
+}
+
+@keyframes xbox-rotation {
+  0% {
+    transform: rotate(240deg) translate(21rem) rotate(120deg);
+  }
+  100% {
+    transform: rotate(-120deg) translate(21rem) rotate(480deg);
+  }
+}
+
+/* Inner circle */
+@keyframes gta-rotation {
+  0% {
+    transform: rotate(300deg) translate(14.5rem) rotate(60deg);
+  }
+  100% {
+    transform: rotate(-60deg) translate(14.5rem) rotate(420deg);
+  }
+}
